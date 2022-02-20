@@ -18,6 +18,9 @@ namespace M2N.Application.Infrastructor
                 .ForMember(x => x.CategoryDate, o => o.MapFrom(x => x.TaskCategory.CreatedDate))
                 .ForMember(x => x.StageName, o => o.MapFrom(x => x.Stage.Name))
                 .ReverseMap();
+
+            CreateMap<TaskCategoryDto, TaskCategory>().ReverseMap();
+            CreateMap<TaskCategoryDso, TaskCategory>().ReverseMap();
         }
     }
 }
