@@ -13,7 +13,9 @@ namespace M2N.API.Controllers
         [HttpGet("{taskCategoryId}")]
         public async Task<IActionResult> GetAll(int taskCategoryId)
         {
-            return Ok(await mediatr.Send(new TaskGetAllQuery { TaskCategoryId = taskCategoryId }));
+            var response = await mediatr.Send(new TaskGetAllQuery { TaskCategoryId = taskCategoryId });
+            if (response == null) return ValidationProblem();
+            return Ok(response);
         }
 
         [HttpPost]

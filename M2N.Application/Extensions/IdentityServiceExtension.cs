@@ -43,7 +43,7 @@ namespace M2N.Application.Extensions
                 );
             services.AddAuthorization();
 
-            services.AddScoped<ITokenService, TokenService>();
+           
 
             return services;
         }

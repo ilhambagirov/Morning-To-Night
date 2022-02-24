@@ -22,7 +22,7 @@ namespace M2N.API.Controllers
         public async Task<IActionResult> Register(RegisterDto registerCreds)
         {
             var response = await mediatr.Send(new UserRegisterCommand { RegisterDtoProperty = registerCreds });
-            if (response == null) return ValidationProblem(); ;
+            if (response == null) return ValidationProblem();
             return Ok(response);
         }
     }

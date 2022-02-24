@@ -1,5 +1,7 @@
 using M2N.Application.Extensions;
 using M2N.Application.Infrastructor;
+using M2N.Application.Infrastructor.Interfaces;
+using M2N.Application.Services;
 using M2N.Persistence.Data;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -79,6 +81,8 @@ namespace M2N.API
 
             services.AddHttpContextAccessor();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IUserAccessor, UserAccessor>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
