@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url(../../assets//fonts/ArchitectsDaughter-Regular.ttf);
+}
+.header{
+    height: 90px;
+    background-color: yellow;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 30px;
+        .header__left{
+            display: flex;
+            align-items: center;
+            .header__left__logo{
+                font-weight: 700;
+                font-size: 30px;
+                font-family: 'Architects Daughter';
+                .logo__dots{
+                    margin-left: 1px;
+                    background-color: black;
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    margin-right: 2px;
+                }
+            }
+            .header__left__search{
+                margin-left: 110px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+            }
+        }
+        .header__right{
+            display: flex;
+            align-items: center;
+            .header__right__userphoto__holder{
+                margin-bottom: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: inline-block;
+                img{
+                    height: inherit;
+                    width: inherit;
+                    border-radius: inherit;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+   
+}
