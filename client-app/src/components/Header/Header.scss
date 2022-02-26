@@ -1,55 +1,80 @@
 @font-face {
-    font-family: 'Architects Daughter';
-    src: url(../../assets//fonts/ArchitectsDaughter-Regular.ttf);
+  font-family: "Architects Daughter";
+  src: url(../../assets//fonts/ArchitectsDaughter-Regular.ttf);
 }
-.header{
-    height: 90px;
-    background-color: yellow;
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: auto 30px;
-        .header__left{
-            display: flex;
-            align-items: center;
-            .header__left__logo{
-                font-weight: 700;
-                font-size: 30px;
-                font-family: 'Architects Daughter';
-                .logo__dots{
-                    margin-left: 1px;
-                    background-color: black;
-                    display: inline-block;
-                    width: 5px;
-                    height: 5px;
-                    margin-right: 2px;
-                }
-            }
-            .header__left__search{
-                margin-left: 110px;
-                border-radius: 8px;
-                border: none;
-                outline: none;
-            }
-        }
-        .header__right{
-            display: flex;
-            align-items: center;
-            .header__right__userphoto__holder{
-                margin-bottom: 0;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                display: inline-block;
-                img{
-                    height: inherit;
-                    width: inherit;
-                    border-radius: inherit;
-                    object-fit: cover;
-                }
-            }
-        }
+
+@media (max-width: 768px) {
+    .header__left__search {
+       display: none !important;
     }
-   
+    .header__left__search__icon {
+        display: none;
+    }
+  }
+.custom-container {
+  height: 90px;
+  background-color: #21adff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  .header__left {
+    display: flex;
+    align-items: center;
+    .header__left__logo {
+      font-weight: 700;
+      font-size: 30px;
+      font-family: "Architects Daughter";
+      .logo__dots {
+        margin-left: 1px;
+        background-color: black;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-right: 2px;
+      }
+    }
+    .header__left__search__wrapper {
+        position: relative;
+      .header__left__search {
+        margin-left: 110px;
+        border-radius: 18px;
+        background-color: rgb(240, 240, 217);
+        width: 300px;
+        border: 2px solid rgb(108, 15, 214);
+        outline: none;
+        padding: 5px 15px 5px 30px;
+      }
+      .header__left__search__icon {
+        position: absolute;
+        left: 120px;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        outline-color: rgb(108, 15, 214);
+      }
+    }
+  }
+  .header__right {
+    display: flex;
+    align-items: center;
+    .header__right__username {
+      font-size: 15px;
+      font-weight: 700;
+      margin-right: 20px;
+    }
+    .header__right__userphoto__holder {
+      margin-bottom: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-block;
+      img {
+        height: inherit;
+        width: inherit;
+        border-radius: inherit;
+        object-fit: cover;
+      }
+    }
+  }
 }
