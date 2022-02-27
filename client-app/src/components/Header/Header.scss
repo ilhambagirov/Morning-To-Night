@@ -58,6 +58,16 @@
   .header__right {
     display: flex;
     align-items: center;
+    .close{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      background-color: lightblue;
+      .close__icon{
+        width: 20px;
+        height: 20px;
+      }
+    }
     .header__right__username {
       font-size: 15px;
       font-weight: 700;
