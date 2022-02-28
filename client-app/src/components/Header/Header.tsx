@@ -20,7 +20,7 @@ export default function Header() {
                     <span className='logo__dots'></span>
                 </span>
                 <div className='header__left__search__wrapper'>
-                    <input className='header__left__search' type="text" />
+                    <input className='header__left__search' type="text" placeholder='Search in your boards...' />
                     <BiSearch className='header__left__search__icon' />
                 </div>
             </div>

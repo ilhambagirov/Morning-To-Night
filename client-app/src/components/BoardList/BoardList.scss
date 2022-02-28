@@ -9,7 +9,7 @@
   align-items: center;
   flex-direction: column;
   .navigation__search__wrapper {
-      margin-top: 20px;
+    margin-top: 20px;
     position: relative;
     .navigation__search {
       border-radius: 18px;
@@ -28,20 +28,40 @@
       outline-color: rgb(108, 15, 214);
     }
   }
-  .navigation__list {
+  .navigation__content{
     margin-top: 20px;
     width: 300px;
     height: max-content;
     background-color: #fff;
     border-radius: 8px;
     padding-left: 15px;
+    .create__task{
+      background-color: #21adff;
+      span{
+        font-weight: 600;
+        color: white;
+      }
+      svg{
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+  .navigation__list {
+    padding: 0;
     li {
       padding: 5px 5px;
       cursor: pointer;
-      font-weight: 500;
-      font-size: 17px;
+      display: flex;
+      align-items: center;
+      span {
+        font-weight: 500;
+        font-size: 17px;
+      }
       .task-icon {
         color: #21adff;
+        font-size: 25px;
+        margin-right: 10px;
       }
     }
   }

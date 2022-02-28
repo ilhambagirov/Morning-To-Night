@@ -1,0 +1,60 @@
+.createTask__Modal {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+  .closeModal__btn {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .project__board__create {
+    width: 500px;
+    height: 600px;
+    form {
+      label {
+        font-weight: 500;
+        font-size: 16px;
+      }
+      input {
+        margin-left: 10px;
+        padding: 0.4rem 0.8rem;
+        border: 2px #eee solid;
+        color: #6a6a6a;
+        font-weight: 500;
+        outline: none;
+      }
+      textarea {
+        margin-left: 10px;
+        padding: 0.4rem 0.8rem;
+        border: 2px #eee solid;
+        color: #6a6a6a;
+        font-weight: 500;
+        outline: none;
+      }
+    }
+  }
+  .createTask__Modal__content {
+    .type__board {
+      border-radius: 8px;
+      padding: 10px;
+      width: 250px;
+      height: max-content;
+      background-color: #e9e9e9;
+      &:hover {
+        background-color: #e4e3e3;
+      }
+      .create__btn {
+        border: none;
+        outline: none;
+        background-color: #9acae5;
+        color: white;
+        border-radius: 8px;
+        padding: 5px 15px;
+        &:hover {
+          background-color: #6091e0;
+        }
+      }
+    }
+  }
+}
